@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monoton&display=swap" rel="stylesheet">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery-migrate-1.4.1.min.js"></script>
+    <script>
+          
+          $(function(){
+            $("ul.panel li:not(#tab1)").hide();
+            $("ul.tab li a").click(function(){
+                $("ul.panel li").stop().hide();
+                $($(this).attr("href")).stop().show();
+                $("ul.tab li a").removeClass("selected");
+                $(this).addClass("selected");
+                return false;
+            });
+      
+        
+            var nav=$("ul>li");
+            var cont=$("#content div");
+
+            nav.click(function(){
+                var target = $(this);
+                var i = target.index();
+
+                var section=cont.eq(i);
+                var offset=section.offset().top;
+
+                $("html, body").animate({
+                    scrollTop:offset
+                },400);
+            });
+          });
+
+
+    </script>
+    <style>
+         *{
+            padding:0;
+            margin:0;
+            
+            letter-spacing: 5px;
+            
+
+        }
+        
+        body{
+         width: 90%;
+         margin: 0 auto;
+         background-image: url('bg2.png');
+            background-repeat: no-repeat;
+            background-size: 100% 135%;
+            
+          
+        }
+        header{
+            font-family: 'Bebas Neue', cursive;
+            letter-spacing: 10px;
+            width: 100%;
+            margin: 0 auto;
+
+        }
+        #logo{
+           
+            margin-left: 50px;
+            margin-top: 20px;
+            float: left;
+        }
+        #subnav ul{
+            list-style: none;
+            margin-top: 10px;
+
+        }
+        #subnav ul li{
+            display: inline-block;
+            margin-right : 30px;
+
+        }
+        #subnav ul li:first-child{
+            margin-left: 50%;
+        }
+        #subnav ul li a{
+            text-decoration: none;
+            color:rgb(15, 15, 71); 
+            letter-spacing: 5px;
+        }
+        section{
+            clear: both;
+            width: 90%;
+            margin-left: 10%;
+            position: relative;
+        }
+        #network{
+            margin-left: 70%;
+            margin-top: 50px;
+        }
+        .panel img{
+            width: 1000px;
+        }
+
+
+
+
+
+        /* #content{
+            font-size: 30px;
+            margin-left: 30%;
+           
+        } */
+        #article1 ul{
+            margin-left: 40px;
+        }
+
+        #article1 ul li{
+            
+            list-style: none;
+            width: 280px;
+            height : 40px;
+            /* border: 1px solid red; */
+            /* text-align: center; */
+            /*  */
+            margin-left: 10px;
+            
+            /* border: 1px solid blue; */
+        }
+        #article1 ul li a{
+          /* border: 1px solid green; */
+            text-decoration: none;
+            font-size: 20px;
+            display: block;
+            line-height: 40px;
+           padding-left: 10px;
+        }
+        
+        #article1 ul li a :first-child{
+            background-color: #ccc;
+        }
+
+        #article1 ul li a:first-child{
+            text-decoration: none;
+            color :#ccc;
+        }
+        #article1 ul li:last-child{
+            /* background-color: rgb(15, 15, 71);  */
+            color :#ccc;
+            margin-left: 63%;
+           
+    
+        }
+        #article1 ul li:last-child a {
+            background-color: rgb(15, 15, 71);
+            border-radius: 10px;
+            color :#ccc;
+            
+    
+        }
+        #network{
+           
+         
+            color : #4d4b4b;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        #container{
+           width: 100%;
+           margin: 20px 10px;
+           float: left;
+            
+        }
+        #container ul.tab{
+            list-style: none;
+            /* margin-top: 20px; */
+            margin-left: 10px;
+            float: left;
+
+        }
+        #container ul.tab li{
+            margin-bottom: 5px;
+            width: 200px;
+            z-index: 100;
+
+            
+        }
+        #container ul.tab li a{
+            display:block;
+            background-color: rgba(199,217,228,0.8);
+            border-radius: 10px 0 0 10px;
+            color : rgb(31, 14, 78);
+            text-align: center;
+            line-height: 80px;
+            text-decoration: none;
+            font-size: 20px;
+            height: 80px;
+            font-weight: bold;
+            /* border: 3px dotted rgb(15, 15, 71); */
+
+            
+        }
+        #container ul.tab li a.selected{
+            color : rgb(15, 15, 71);
+        }
+        #container ul.panel{
+            float: left;
+        }
+    
+        #article1 ul li a{
+            text-align: center;
+            font-weight: bold;
+        }
+        .panel{
+            list-style: none;
+        }
+        .panel li img{
+            width: 1000px;
+            height: 534px;
+            /* border: 3px dotted rgb(15, 15, 71); */
+        }
+     
+
+
+    </style>
+    <title>Dealer List</title>
+</head>
+<body>
+    <header>
+        <a href="shinhung2.html"><img src="신흥로고.png" alt="" id="logo" width="250"></a>
+       
+        
+        <div id="subnav">
+            <div id="content">
+            
+            <ul>
+                <li><a href="shinhung_login.html">Login</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        </header>
+
+        <p id="network"></p>
+    
+        <div id="article1">
+            
+            <ul> 
+                <li><a href="#"> </a></li>
+                <li><a href="#">Dealer List</a></li>
+            </ul>
+        </div>
+        <section>
+            
+        <div id="container">
+            <ul class="tab">
+                <li><a href="#tab1">Asia</a></li>
+                <li><a href="#tab2">Middle East</a></li>
+                <li><a href="#tab3">Europe</a></li>
+                <li><a href="#tab4">America</a></li>
+                <li><a href="#tab5">Africa</a></li>
+                <li><a href="#tab6">oceania</a></li>
+            </ul>
+            <ul class="panel">
+                <li id="tab1"><img src="tap1.png" alt="" ></li>
+                <li id="tab2"><img src="tap2.png" alt="" ></li>
+                <li id="tab3"><img src="tap3.png" alt="" ></li>
+                <li id="tab4"><img src="tap4.png" alt="" ></li>
+                <li id="tab5"><img src="tap5.png" alt="" ></li>
+                <li id="tab6"><img src="tap6.png" alt="" ></li>
+            </ul>
+        </div>
+       
+    </section>
+    
+</body>
+</html>

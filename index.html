@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery-migrate-1.4.1.min.js"></script>
+    <script>
+     
+        $(function(){
+        var nav=$("ul>li");
+        var cont=$("#content>div");
+
+        nav.click(function(){
+            var target=$(this);
+            var i=target.index();
+
+            var section=cont.eq(i);
+            var offset=section.offset().top;
+
+            $("html, body").animate({
+                scrollTop:offset
+            },400,"swing");
+        });
+        });
+    </script>
+    <style>
+        
+        *{
+            margin : 0;
+            padding : 0;
+            font-family: 'Inconsolata', monospace;
+
+        }
+        .dark{
+            width : 40%; 
+            height: 95vh;
+            background-color : rgba(0,0,0,0.5);
+            margin-left: 20px;
+         
+          position: absolute;
+          top : 20px;
+        }
+        #article1{
+            background-image: url(portfolio_bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width : 100%;
+            position: relative;
+        }
+        .dark img{
+           float: left;
+           margin-left: 20px;
+           margin-top: 20px;
+        }
+  
+  
+        #intro{
+            margin-top: 30px;
+            margin-left: 45%;
+           
+            font-size: 20px;
+           
+        }
+        #portfolio{
+            position: absolute;
+            top : 300px;
+            left :10%;
+            text-align: center;
+           
+        }
+        #portfolio h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        #portfolio p{
+            font-size: 20px;
+        }
+
+        #blacksuit{
+            position: absolute;
+            top : 30%;
+            left : 60%;
+        }
+
+
+
+        #article2{
+            
+            background-image: url('portfolio_bg1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width : 100%;
+            position: relative;
+        }
+        #section1{
+            margin-top: 50%;
+            margin-left: 25%;
+            line-height: 30px;
+        }
+
+        #fruitpage{
+            margin-left: 45%;
+            margin-top: 25vh;
+        }
+
+        .portfolio{
+            margin-top: 30px;
+            margin-left: 40%;
+           
+            font-size: 20px;
+        }
+        .button{
+            width : 100%;
+        }
+        .box{
+            width: 180px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            margin-left: 120px;
+          
+           
+
+        }
+        .box a{
+            color : black;
+            text-decoration: none;
+        }
+       #article3{
+        background-image: url('portfolio_bg2.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width : 100%;
+            position: relative;
+        }
+        #section2{
+            margin-top: 50%;
+            margin-left: 25%;
+            line-height: 30px;
+        }
+
+        #zarahome_main{
+            margin-left: 45%;
+            margin-top: 25vh;
+        }
+
+        .portfolio{
+            margin-top: 30px;
+            margin-left: 40%;
+           
+            font-size: 20px;
+        }
+        .button{
+            width : 100%;
+        }
+        .box{
+            width: 180px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            margin-left: 120px;
+          
+           
+
+        }
+        .box a{
+            color : black;
+            text-decoration: none;
+        }
+
+        #article4{
+        background-image: url('portfolio_bg4.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width : 100%;
+            position: relative;
+        }
+        #section3{
+            margin-top: 50%;
+            margin-left: 25%;
+            line-height: 30px;
+        }
+
+        #portfolio_travel{
+            margin-left: 53%;
+            margin-top: 5vh;
+        }
+
+        .portfolio{
+            margin-top: 30px;
+            margin-left: 40%;
+           
+            font-size: 20px;
+        }
+        .button{
+            width : 100%;
+        }
+        .box{
+            width: 180px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            margin-left: 120px;
+          
+           
+
+        }
+        .box a{
+            color : black;
+            text-decoration: none;
+        }
+
+        #article5{
+        background-image: url('portfolio_bgblue.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width : 100%;
+            position: relative;
+        }
+        #section4{
+            margin-top: 50%;
+            margin-left: 25%;
+            line-height: 30px;
+        }
+
+        #shinhung{
+            margin-left: 43%;
+            margin-top: 20vh;
+        }
+
+        .portfolio{
+            margin-top: 30px;
+            margin-left: 40%;
+           
+            font-size: 20px;
+        }
+        .button{
+            width : 100%;
+        }
+        .box{
+            width: 180px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            margin-left: 120px;
+          
+           
+
+        }
+        .box a{
+            color : black;
+            text-decoration: none;
+        }
+
+
+       
+  
+
+       
+  
+      
+
+      
+
+
+
+
+
+
+
+
+        #article6{
+            background-image: url('portfolio_bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width : 100%;
+            position: relative;
+        }
+ 
+       
+        #thankyou{
+            padding-top: 120%;
+            margin-left: 45%;
+            padding-bottom: 20px;
+        }
+        #article6 h3{
+            font-size: 40px;
+            padding-bottom: 20px;
+        }
+        #article6 p{
+          
+            line-height: 30px;
+        }
+
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration : none;
+         
+        }
+        #nav{
+            width : 100%;
+            position : fixed;
+            left : 0;
+            top : 0;
+            z-index: 100;
+            
+      
+        }
+      
+        #nav ul{
+            float : right;
+        }
+        
+        #nav ul li{
+            display : inline-block;
+            font-size: 18px;
+           
+            
+            
+        }
+        #nav ul li:last-child{
+            margin-right: 30px;
+        }
+        #nav ul li a{
+            color : rgb(65, 64, 64);
+            display: block;
+            padding : 17px 20px 20px 20px;
+        }
+       
+       
+
+        #article7{
+            background-image: url('portfolio_bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width : 100%;
+            position: relative;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration : none;
+         
+        }
+        #nav{
+            width : 100%;
+            position : fixed;
+            left : 0;
+            top : 0;
+            z-index: 100;
+            
+      
+        }
+      
+        #nav ul{
+            float : right;
+        }
+        
+        #nav ul li{
+            display : inline-block;
+            font-size: 18px;
+           
+            
+            
+        }
+        #nav ul li:last-child{
+            margin-right: 30px;
+        }
+        #nav ul li a{
+            color : rgb(65, 64, 64);
+            display: block;
+            padding : 17px 20px 20px 20px;
+        }
+ 
+       
+    
+     
+
+        #article7 iframe{
+            width : 100%;
+            height: 80vh;
+            padding-top: 100px;
+
+
+
+        }
+     
+  
+        
+
+    </style>
+    <title>portfolio</title>
+</head>
+<body>
+    <div id="nav">
+        
+        <ul>
+           <li><a href="#article1">Intro</a></li>
+           <li><a href="#article2">#01</a></li>
+           <li><a href="#article3">#02</a></li>
+           <li><a href="#article4">#03</a></li>
+           <li><a href="#article5">#04</a></li>
+           <li><a href="#article6">Profile</a></li>
+           <li><a href="#article7">EPILOGUE</a></li>
+        </ul>
+    </div>
+   <div id="content">
+    <div id="article1">
+        
+       
+        <div class="dark">
+   
+            <p id="intro">
+                Intro
+            </p>
+        <div id="portfolio">
+             <h1>PORTFOLIO</h1>
+             <p>HELLO. WELCOME TO MINHEE's PORTFOLIO PAGE</p>
+             
+        </div>
+    </div>
+    <img src="blacksuit.png" alt="" id="blacksuit">
+    </div>
+    
+    <div id="article2">
+      
+        <div class="dark">
+     
+        <p class="portfolio">
+            Portfolio
+        </p>
+        <div id="section1">
+          <p># 01</p>
+          <h1>YUMMY FRUITS</h1>
+          <p>HTML, CSS, Jquery<br>
+             TAB MENU<br>
+            One Page Design<br></p>
+        </div>
+        <div class="button">
+        <div id="box1" class="box">
+           <a href="20200723.html#section5"> VIEW WEBPAGE</a>
+        </div>
+        <div id="bow2" class="box">
+           <a href="20200723.html#section6">VIEW TAB MENU</a> 
+        </div>
+    </div>
+    </div>
+    <img src="fruits.jpg" alt="" width="650" id="fruitpage">
+    </div>
+
+
+    
+    <div id="article3">
+        <div class="dark">
+     
+            <p class="portfolio">
+                Portfolio
+            </p>
+            <div id="section2">
+              <p># 02</p>
+              <h1>ZARA Home</h1>
+              <p>HTML, CSS, Jquery<br>
+                 TAB MENU<br>
+                 RESPONSIVE WEB<br></p>
+            </div>
+            <div class="button">
+            <div id="box3" class="box">
+               <a href="zarahome.html"> VIEW WEBPAGE</a>
+            </div>
+            <div id="box4" class="box">
+               <a href="zara_bedroom.html">VIEW SUB PAGE1</a> 
+            </div>
+            <div id="box5" class="box">
+                <a href="zara_specialprice.html">VIEW SUB PAGE2</a> 
+
+             </div>
+           
+            
+        </div>
+        </div>
+        <img src="zarahome_main.jpg" alt="" width="650" id="zarahome_main">
+        </div>
+        
+
+    
+    <div id="article4">
+        <div class="dark">
+     
+            <p class="portfolio">
+                Portfolio
+            </p>
+            <div id="section3">
+              <p>#03</p>
+              <h1>TRAVEL SITE</h1>
+              <p>HTML, CSS, Jquery<br>
+                 LOGIN PAGE<br>
+                 <br></p>
+            </div>
+            <div class="button">
+            <div id="box6" class="box">
+               <a href="travel.html"> VIEW WEBPAGE</a>
+            </div>
+            <div id="box7" class="box">
+               <a href="travel_sub.html">VIEW SUB PAGE1</a> 
+            </div>
+            <div id="box8" class="box">
+                <a href="travel_login(1).html">VIEW LOGIN PAGE</a> 
+
+             </div>
+             <div id="box9" class="box">
+                <a href="travel_register(1).html">VIEW REGISTER PAGE</a> 
+
+             </div>
+           
+            
+        </div>
+        </div>
+        <img src="portfolio_travel.jpg" alt="" width="460" id="portfolio_travel">
+        </div>
+
+
+
+   
+    <div id="article5">
+        <div class="dark">
+     
+            <p class="portfolio">
+                Portfolio
+            </p>
+            <div id="section4">
+              <p>#04</p>
+              <h1>Shinhung</h1>
+              <p>HTML, CSS, Jquery<br>
+                 
+                 <br></p>
+            </div>
+            <div class="button">
+            <div id="box10" class="box">
+               <a href="shinhung1.html"> VIEW START PAGE</a>
+            </div>
+            <div id="box11" class="box">
+               <a href="shinhung2.html">VIEW MAIN PAGE</a> 
+            </div>
+            <div id="box11" class="box">
+                <a href="shinhung_login.html">VIEW LOGIN PAGE1</a> 
+             </div>
+             <div id="box11" class="box">
+                <a href="shinhung_implant.html">VIEW SUB PAGE</a> 
+             </div>
+         
+           
+            
+        </div>
+        </div>
+        <img src="shinhung_img.jpg" alt="" width="700" id="shinhung">
+        </div>
+
+
+
+    
+    
+    <div id="article6">
+        
+        
+        <div class="dark">
+            
+          
+            
+          
+
+        <div id="thankyou">
+            <h3>THANK YOU</h3>
+            <p>NAME / YOON MINHEE<br>
+            EMAIL / oliver0512@naver.com<br>
+            TEL / +821034787321<br>
+        GITHUB / https://github.com</p>
+        </div>
+    </div>
+    </div>
+b
+     
+    <div id="article7">
+        
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/azRHH_dIfHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+    </div>
+    </div>
+
+    
+</body>
+</html>
