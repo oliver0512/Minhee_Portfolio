@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <style>
+         
+     *{
+         margin: 0;
+         padding: 0;
+     }
+        body{
+            
+            /* border: 1px solid red; */
+            font-family: 'Rubik', sans-serif;
+            color: lightgray;
+            background-image: url(travel_bg.jpg);
+            height: 2000px;
+           
+         
+         
+            
+        }
+        #wrap{
+            position: fixed;
+            width: 350px;
+            height: 500px;
+            background-color: white;
+         
+            
+            box-shadow: 5px 5px 10px black;
+           
+            top: 100px; 
+            left: 50%;
+            margin-left: -15%;
+        }
+         header img{
+             margin-top: 20px;
+             margin-left: 10px;;
+         }
+         header{
+            position: relative;
+        }
+         
+       #close{
+           position: absolute;
+           top: 20px;
+           left : 310px;
+
+       }
+       #close a{
+           text-decoration: none;
+           color : lightgray;
+       }
+       #close a:hover{
+           color: #ff9100;
+
+       }
+       
+
+
+        
+        header h3{
+            margin-top: 20px;
+            float: left;
+            margin-left: 10px;
+        }
+        article{
+            height: 200px;
+            /* border: 1px solid blue; */
+        }
+        #button{
+            width: 270px;
+            height: 40px;
+            background-color: #ff9100;
+            cursor: pointer;
+            margin-top : 20px;
+            margin-bottom : 20px;
+            margin-left: 40px;
+            
+        }
+        #email{
+            width: 250px;
+            height: 30px;
+            margin-left: 20px;
+            border-bottom: 3px solid lightgray;
+        }
+        #name{
+            padding-top: 20px;
+            width: 250px;
+            height: 30px;
+            margin-left: 20px;
+            border-bottom: 3px solid lightgray;
+           
+        }
+        #password{
+            padding-top: 20px;
+            width: 250px;
+            height: 30px;
+            margin-left: 20px;
+            border-bottom: 3px solid lightgray;
+           
+        }
+        .text{
+            width: 300px;
+            font-size: 13px;
+            color: lightgray;
+            border: none;
+            padding-bottom: 5px;
+            border-bottom: 3px solid lightgray;
+        }
+       
+        #button p{
+            text-align: center;
+            line-height: 40px;
+            color:white;
+            font-size: 20px;
+        }
+        #google{
+            width: 150px;
+            height: 30px;
+            border : 2px solid lightgray;
+            float: left;
+            margin-left: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        #google span{
+            /* border: 1px solid red; */
+            margin: 0 auto;
+           width: 90px;
+           height: 30px;
+           display: inline-block;
+           line-height: 30px;
+           text-align: center;
+         
+        }
+        #google img{
+            /* border: 1px solid blue; */
+            vertical-align: bottom;
+            padding-left: 10px;
+
+        }
+        #facebook{
+            float: left;
+            width: 150px;
+            height: 30px;
+            border : 2px solid lightgray;
+            cursor: pointer;
+        }
+        #facebook span{
+            /* border: 1px solid red; */
+            margin: 0 auto;
+           width: 100px;
+           height: 30px;
+           display: inline-block;
+           line-height: 30px;
+           text-align: center;
+         
+        }
+        #facebook img{
+            /* border: 1px solid blue; */
+            vertical-align: bottom;
+            padding-left: 10px;
+
+        }
+       
+        footer{
+            margin-top: 30px;
+        }
+        footer p:first-child{
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        
+        #last{
+            clear: both;
+            float: left;
+        }
+        article input{
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #last p{
+           width: 350px;
+            text-align: center;
+            /* border: 1px solid red; */
+            float: left;
+            
+        }
+        #last a{
+            color : #ff9100;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        footer{
+            /* border: 1px solid red; */
+            height: 250px;
+        }
+       
+        input{
+            outline: none;
+        }
+       
+    
+
+    </style>
+</head>
+<body>
+   <div id="wrap">
+    <header>
+        <h3>REGISTER</h3>
+        <img src="register.png" alt="" width="140px">
+        <div id="close">
+            <a href="travel_sub.html">X</a>
+        </div>
+    </header>
+    <article>
+        <input type="text" placeholder="Username or Email" class="text"><br>
+        <input type="text" placeholder="Full Name" class="text"><br>
+        <input type="password" placeholder="password" class="text">
+        <div id="button">
+            <p>Register</p>
+        </div>
+    </article>
+
+    <footer>
+        <p>-----------------OR-----------------</p>
+        <div id="google">
+            <img src="logo_facebook.jpg" alt="" width="28" height="28">
+            <span>GOOGLE</span>
+        </div>
+        <div id="facebook">
+            <img src="logo_google.jpg" alt="" width="30">
+            <span>FACEBOOK</span>
+
+        </div>
+
+        <div id="last">
+            <p>Go back to Mainpage and <a href="travel.html"><Span>LogIn</Span></a></p>
+          
+       
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>

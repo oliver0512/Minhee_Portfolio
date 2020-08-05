@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <style>
+         
+     *{
+         margin: 0;
+         padding: 0;
+     }
+        body{
+            
+            /* border: 1px solid red; */
+            font-family: 'Rubik', sans-serif;
+            color: lightgray;
+            background-image: url(travel_bg.jpg);
+            height: 2000px;
+           
+         
+         
+            
+        }
+        #wrap{
+            position: fixed;
+            width: 350px;
+            height: 500px;
+            background-color: white;
+         
+            
+            box-shadow: 5px 5px 10px black;
+           
+            top: 100px; 
+            left: 50%;
+            margin-left: -15%;
+        }
+         
+       
+
+        header{
+            position: relative;
+        }
+         
+       #close{
+           position: absolute;
+           top: 20px;
+           left : 310px;
+
+       }
+       #close a{
+           text-decoration: none;
+           color : lightgray;
+       }
+       #close a:hover{
+           color: #ff9100;
+
+       }
+
+        header img{
+            float: left;
+        }
+        
+        .text{
+           width: 300px;
+            font-size: 13px;
+            color: lightgray;
+            border: none;
+            padding-bottom: 5px;
+            border-bottom: 3px solid lightgray;
+        }
+       
+        header h3{
+            margin-top: 20px;
+            float: left;
+            margin-left: 10px;
+        }
+        article{
+            clear:both;
+            height: 150px;
+        }
+        #button{
+            width: 270px;
+            height: 40px;
+            background-color: #ff9100;
+            cursor: pointer;
+            text-align: center;
+            margin-left: 35px;
+            
+            
+        }
+        input{
+            outline: none;
+        }
+  
+        #button p{
+            text-align: center;
+            line-height: 40px;
+            color:white;
+            font-size: 20px;
+
+        }
+        #google{
+            width: 150px;
+            height: 30px;
+            border : 2px solid lightgray;
+            float: left;
+            margin-left: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        #google span{
+            /* border: 1px solid red; */
+            margin: 0 auto;
+           width: 90px;
+           height: 30px;
+           display: inline-block;
+           line-height: 30px;
+           text-align: center;
+         
+        }
+        #google img{
+            /* border: 1px solid blue; */
+            vertical-align: bottom;
+            padding-left: 10px;
+
+        }
+        #facebook{
+            float: left;
+            width: 150px;
+            height: 30px;
+            border : 2px solid lightgray;
+            cursor: pointer;
+        }
+        #facebook span{
+            /* border: 1px solid red; */
+            margin: 0 auto;
+           width: 100px;
+           height: 30px;
+           display: inline-block;
+           line-height: 30px;
+           text-align: center;
+         
+        }
+        #facebook img{
+            /* border: 1px solid blue; */
+            vertical-align: bottom;
+            padding-left: 10px;
+
+        }
+       
+        footer{
+            margin-top: 30px;
+        }
+        footer p:first-child{
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        
+        #last{
+            clear: both;
+            float: left;
+        }
+        article input{
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        #last p{
+           
+            margin-left: 20px;
+            float: left;
+            margin-top: 20px;
+        }
+        #last a h4 {
+            float: left;
+           color: #ff9100;
+           text-decoration: none;
+           margin-left: 30px;
+           margin-top: 20px;
+           font-size: 20px;
+        }
+    
+
+    </style>
+</head>
+<body>
+   <div id="wrap">
+    <header>
+        <h3>LOGIN</h3>
+        <img src="earth.png" alt="" width="200px">
+        <div id="close">
+            <a href="travel.html">X</a>
+        </div>
+    </header>
+    <article>
+        <input type="text" placeholder="Username or Email" class="text"><br>
+        <input type="password" placeholder="password" class="text"><br>
+        <input type="checkbox" name="" id="">
+        <span>Remember Me</span>
+        <div id="button">
+            <p>LOGIN</p>
+        </div>
+    </article>
+
+    <footer>
+        <p>-----------------OR-----------------</p>
+        <div id="google">
+            <img src="logo_facebook.jpg" alt="" width="28" height="28">
+            <span>GOOGLE</span>
+        </div>
+        <div id="facebook">
+            <img src="logo_google.jpg" alt="" width="30">
+            <span>FACEBOOK</span>
+
+        </div>
+
+        <div id="last">
+            <p>Don't have an account?</p>
+            
+            <a href="travel_register(1).html"><h4>Sign UP</h4></a>
+       
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
